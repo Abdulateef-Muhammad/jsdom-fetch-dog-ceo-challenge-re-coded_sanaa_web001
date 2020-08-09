@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
           dogBreads.innerHTML = '';
           for(const bread in json.message) {
           if(reOnChange.test(bread)) {
-          dogBreads.innerHTML += addElement(
+          addElement(
             'li',
             document.getElementById('dog-breeds'),
             'bread-li',
